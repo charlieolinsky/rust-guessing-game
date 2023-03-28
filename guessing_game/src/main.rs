@@ -5,7 +5,7 @@ fn main() {
 
     //Generate Random Number using External Crate 
     let secret_number = rand::thread_rng().gen_range(1..=100); //inclusive [x, y]
-    println!("The secret number is: {secret_number}");
+    //println!("The secret number is: {secret_number}");
 
     //Prompt User for Input
     println!("Guess the Number!"); 
