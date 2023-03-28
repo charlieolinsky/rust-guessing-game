@@ -24,7 +24,10 @@ fn main() {
         //parse returns a Result enum (Ok or Err) that we can use to handle erroneous inputs with match
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue, 
+            Err(_) => {
+                println!("Invalid Input, Try Again!"); 
+                continue
+            }, 
         }; 
 
         //Read back
